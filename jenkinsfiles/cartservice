@@ -34,7 +34,7 @@ pipeline {
                     docker tag cartservice:latest 686255944321.dkr.ecr.us-east-1.amazonaws.com/cartservice:${BUILD_NUMBER}
 
                     #Run the following command to push this image to your newly created AWS repository:
-                    docker push 242201296943.dkr.ecr.us-east-1.amazonaws.com/cartservice:${BUILD_NUMBER}
+                    docker push 686255944321.dkr.ecr.us-east-1.amazonaws.com/cartservice:${BUILD_NUMBER}
                     '''
                 }
             }
@@ -45,7 +45,7 @@ pipeline {
                 GIT_EMAIL = "Yaswanth.arumulla@gmail.com"
                 GIT_USER_NAME = "arumullayaswanth"
                 IMAGE_NAME = "cartservice"
-                REPO_URL = "242201296943.dkr.ecr.us-east-1.amazonaws.com/cartservice"
+                REPO_URL = "686255944321.dkr.ecr.us-east-1.amazonaws.com/cartservice"
                 YAML_FILE = "cartservice.yaml"
             }
             steps {
