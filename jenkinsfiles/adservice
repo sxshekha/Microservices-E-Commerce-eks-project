@@ -11,7 +11,7 @@ pipeline {
     }
 
     stages {
-        stage('Cleaning Workspace') {
+        stage('Cleaning Workspace new') {
             steps {
                 cleanWs()
             }
